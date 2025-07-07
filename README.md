@@ -3,7 +3,7 @@
 <!-- markdownlint-disable no-duplicate-header -->
 
 <div align="center">
-  <img src="assets/MiromindAI_H.svg" width="40%" alt="MiroMindM1" />
+  <img src="assets/MiromindAI_H.svg" width="50%" alt="MiroMindM1" />
 </div>
 <hr>
 
