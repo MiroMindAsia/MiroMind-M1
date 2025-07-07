@@ -1,3 +1,22 @@
+<!-- markdownlint-disable first-line-h1 -->
+<!-- markdownlint-disable html -->
+<!-- markdownlint-disable no-duplicate-header -->
+
+<div align="center">
+  <img src="assets/MiromindAI_H.svg" width="40%" alt="MiroMindM1" />
+</div>
+<hr>
+
+<div align="center">
+
+[![Models](https://img.shields.io/badge/Models-000000?style=for-the-badge&logo=huggingface&logoColor=ffffff&labelColor)](https://huggingface.co/collections/Skywork/skywork-or1-67fa1bcb41b436ef2def76b9)
+[![Data](https://img.shields.io/badge/Data-000000?style=for-the-badge&logo=huggingface&logoColor=ffffff&labelColor)](https://huggingface.co/datasets/Skywork/Skywork-OR1-RL-Data)
+[![Github](https://img.shields.io/badge/Code-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SkyworkAI/Skywork-OR1)
+
+</div>
+
+
+
 # MiroMind-M1
 
 ## News
