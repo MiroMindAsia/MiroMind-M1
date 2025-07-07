@@ -54,11 +54,11 @@ ray start --address="$HEAD_NODE_IP:6379" --num-gpus 8
 First, please provde the below variables:
 
 ```bash
-MODEL_PATH=YOUR_MODEL_PATH
-CKPTS_DIR=YOUR_CKPTS_DIR
-TRAIN_FILE=YOUR_TRAIN_FILE
-TEST_FILE=YOUR_TEST_FILE
-HOME=YOUR_HOME_PATH
+export MODEL_PATH=YOUR_MODEL_PATH
+export CKPTS_DIR=YOUR_CKPTS_DIR
+export TRAIN_FILE=YOUR_TRAIN_FILE
+export TEST_FILE=YOUR_TEST_FILE
+export HOME=YOUR_HOME_PATH
 ```
 
 Then run the below script to start the training:
