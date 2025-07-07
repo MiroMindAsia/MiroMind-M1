@@ -1,13 +1,6 @@
 #!/usr/bin/env bash
 set -x
 
-# Paths
-MODEL_PATH=YOUR_MODEL_PATH
-CKPTS_DIR=YOUR_CKPTS_DIR
-TRAIN_FILE=YOUR_TRAIN_FILE
-TEST_FILE=YOUR_TEST_FILE
-HOME=YOUR_HOME_PATH
-
 project_name='miromind-m1'
 exp_name='32b'
 
@@ -56,7 +49,7 @@ infer_ppo_max_token_len=$((max_prompt_length + max_response_length))
 offload=True
 gen_tp=4
 
-python -m m1_training_scripts.src.main_campo \
+python -m m1_train_script.src.main_campo \
     data.train_files="${TRAIN_FILE}" \
     data.val_files="${TEST_FILE}" \
     data.prompt_key=prompt \
@@ -130,4 +123,4 @@ python -m m1_training_scripts.src.main_campo \
     trainer.save_freq=5 \
     trainer.total_epochs=5 \
     trainer.default_local_dir="${CKPTS_DIR}" \
-    trainer.resume_mode=auto $@ 2>&1 | tee logs/${exp_name}.log
+    trainer.resume_mode=auto $@ 2>&1 | tee ${exp_name}.log
