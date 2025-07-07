@@ -5,8 +5,7 @@
 <div align="center">
   <img src="assets/MiromindAI_H.svg" width="50%" alt="MiroMindM1" />
 </div>
-<hr>
-
+<!-- <hr> -->
 <div align="center">
 
 [![Models](https://img.shields.io/badge/Models-000000?style=for-the-badge&logo=huggingface&logoColor=ffffff&labelColor)](https://huggingface.co/collections/Skywork/skywork-or1-67fa1bcb41b436ef2def76b9)
