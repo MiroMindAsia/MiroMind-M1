@@ -21,10 +21,15 @@
 
 
 ## Overview
+<div align="center">
+  <img src="assets/7b_performance_training.png" width="90%" alt="7B Model Training Performance" />
+  <p><i>Training performance of MiroMind-M1-RL-7B on AIME24 and AIME25.</i></p>
+</div>
+
+[One paragraph to introduce both MiroMind-M1 model series.]
 
 
 ## Evaluation
-
 
 ## Getting Started
 
