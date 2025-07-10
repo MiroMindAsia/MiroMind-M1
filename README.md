@@ -21,7 +21,7 @@
 # MiroMind-M1
 
 
-## Overview
+## 🧾 Overview
 <div align="center">
   <img src="assets/7b_performance_training.png" width="80%" alt="7B Model Training Performance" />
   <p><i>Training performance of MiroMind-M1-RL-7B on AIME24 and AIME25.</i></p>
@@ -30,9 +30,39 @@
 [One paragraph to introduce both MiroMind-M1 model series.]
 
 
-## Evaluation
+## 📊 Evaluation
 
-## Getting Started
+### MiroMind-M1-SFT
+| Model           | Initial Checkpoint         | AIME24 (avg@64) | AIME25 (avg@64) | MATH500 (avg@5) |
+|------------------|----------------------------|--------|--------|---------|
+| DeepSeek-R1-Distill                  | Qwen2.5-Math-7B             | 55.5   | 40.4†  | 92.8    |
+| OpenThoughts                         | Qwen2.5-7-Instruct           | 31.3   | 23.3   | 83.2    |
+| Open-R1                              | Qwen2.5-Math-7B-Instruct     | 36.7   | 40.0   | 90.6    |
+| Synthetic-1                          | Qwen2.5-7B-Instruct          | 30.0   | 26.6   | 85.6    |
+| **MiroMind-SFT-7B**                  | Qwen2.5-Math-7B             | 60.4   | 45.0   | 94.6    |
+
+*† means that the score of DeepSeek-R1 on AIME25 is from our evaluation.*
+
+### MiroMind-M1-RL
+| Model                            | AIME24 (avg@64) | AIME25 (avg@64) | MATH500 (avg@5) |
+|----------------------------------|--------|--------|---------|
+| DeepSeek-R1                      | 79.8   | 70.0   | –       |
+| DeepSeek-R1-0528                 | 91.4   | 87.5   | –       |
+| Qwen3-8B                         | 76.0   | 67.3   | –       |
+| DeepSeek-R1-0528-Qwen3-8B        | 86.0   | 76.3   | –       |
+| <tr><td colspan="4" align="center"><em>**32B Models trained from Qwen2.5 series**</em></td></tr> |
+| DeepSeek-R1-Distill-Qwen-32B     | 70.8   | 52.1   | 95.8    |
+| Skywork-OR1-32B-Preview          | 77.1   | 68.2   | 97.5    |
+| **MiroMind-M1-RL-32B**           | 77.5   | 65.6   | 96.4    |
+| <tr><td colspan="4" align="center"><em>**7B Models trained from Qwen2.5 series**</em></td></tr> |
+| DeepSeek-R1-Distill-Qwen-7B      | 55.5   | 39.2   | –       |
+| **MiroMind-M1-SFT-7B**           | 60.4   | 45.0   | 94.6    |
+| Light-R1-7B-DS                   | 59.1   | 44.3   | –       |
+| Skywork-OR1-7B                   | 72.2   | 54.6   | –       |
+| **MiroMind-M1-RL-7B**            | 73.4   | 57.8   | 96.7    |
+
+
+## 🛠 Getting Started
 
 ### Installation
 
@@ -54,7 +84,7 @@ pip3 install flash_attn==2.7.4.post1 --no-build-isolation # This may take a whil
 pip3 install -e .
 ```
 
-## Training
+## 🏋️ Training
 
 ### Multi-Node Training
 
@@ -89,3 +119,5 @@ Then run the below script to start the training:
 ```bash
 bash m1_train_script/campo_32b.sh
 ```
+
+## ⚖️ Run Evaluation
