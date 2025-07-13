@@ -121,3 +121,33 @@ bash m1_train_script/campo_32b.sh
 ```
 
 ## ⚖️ Run Evaluation
+
+We provide ready-to-use evaluation scripts in the `m1_eval_script/` directory for mathematical reasoning benchmarks.
+
+### Quick Start
+
+```bash
+# Evaluate on AIME 2024
+bash m1_eval_script/evaluate_7b_aime24.sh
+
+# Evaluate on AIME 2025  
+bash m1_eval_script/evaluate_7b_aime25.sh
+
+# Evaluate on Math-500
+bash m1_eval_script/evaluate_7b_math500.sh
+```
+
+### Supported Benchmarks
+
+| Dataset | Script | Standard Runs |
+|---------|--------|---------------|
+| **AIME 2024** | `evaluate_7b_aime24.sh` | 64 runs |
+| **AIME 2025** | `evaluate_7b_aime25.sh` | 64 runs |
+| **Math-500** | `evaluate_7b_math500.sh` | 5 runs |
+
+### Results
+
+Results are saved in `results/[model_name]/[dataset_name]/` with:
+- `average_accuracy.txt`: Final accuracy score
+- `run[X]_inference_eval_results.csv`: Detailed results
+
