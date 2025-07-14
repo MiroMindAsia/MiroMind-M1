@@ -21,7 +21,7 @@ Edit `LLaMA-Factory/data/dataset_info.json` to include:
     "query": "question",
     "response": "response"
     }
-	}
+}
 }
 ```
 Replace `PATH_TO_YOUR_OWN_DATASET` with your dataset location.
