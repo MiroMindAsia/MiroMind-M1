@@ -27,7 +27,7 @@
   <p><i>Training performance of MiroMind-M1-RL-7B on AIME24 and AIME25.</i></p>
 </div>
 
-**MiroMind-M1** is a fully open-source series of reasoning language models built on `Qwen-2.5`, focused on advancing mathematical reasoning with strong transparency. It is trained through supervised fine-tuning (**SFT**) on 719K curated problems and reinforcement learning with verifiable rewards (**RLVR**) on 62K challenging examples, using a context-aware multi-stage policy optimization method (**CAMPO**). MiroMind-M1 achieves state-of-the-art performance among open-source 7B Qwen-2.5-based models on AIME24, AIME25, and MATH500, with all models (`MiroMind-M1-SFT-7B`, `MiroMind-M1-RL-7B`, `MiroMind-M1-RL-32B`), data (`MiroMind-M1-SFT-719K`, `MiroMind-M1-RL-62K`), and training setups openly released.
+**MiroMind-M1** is a fully open-source series of reasoning language models built on `Qwen-2.5`, focused on advancing mathematical reasoning. It is trained through supervised fine-tuning (**SFT**) on 719K curated problems and reinforcement learning with verifiable rewards (**RLVR**) on 62K challenging examples, using a context-aware multi-stage policy optimization method (**CAMPO**). MiroMind-M1 achieves state-of-the-art performance among open-source 7B Qwen-2.5-based models on AIME24, AIME25, and MATH500, with all models (`MiroMind-M1-SFT-7B`, `MiroMind-M1-RL-7B`, `MiroMind-M1-RL-32B`), data (`MiroMind-M1-SFT-719K`, `MiroMind-M1-RL-62K`), and training setups openly released.
 
 
 ## 📊 Evaluation
