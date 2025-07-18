@@ -27,7 +27,7 @@
   <p><i>Training performance of MiroMind-M1-RL-7B on AIME24 and AIME25.</i></p>
 </div>
 
-[One paragraph to introduce both MiroMind-M1 model series.]
+**MiroMind-M1** is a fully open-source series of reasoning language models built on `Qwen-2.5`, focused on advancing mathematical reasoning with strong transparency. It is trained through supervised fine-tuning (**SFT**) on 719K curated problems and reinforcement learning with verifiable rewards (**RLVR**) on 62K challenging examples, using a context-aware multi-stage policy optimization method (**CAMPO**). MiroMind-M1 achieves state-of-the-art performance among open-source 7B Qwen-2.5-based models on AIME24, AIME25, and MATH500, with all models (`MiroMind-M1-SFT-7B`, `MiroMind-M1-RL-7B`, `MiroMind-M1-RL-32B`), data (`MiroMind-M1-SFT-719K`, `MiroMind-M1-RL-62K`), and training setups openly released.
 
 
 ## 📊 Evaluation
@@ -39,6 +39,7 @@
 | OpenThoughts                         | Qwen2.5-7-Instruct           | 31.3   | 23.3   | 83.2    |
 | Open-R1                              | Qwen2.5-Math-7B-Instruct     | 36.7   | 40.0   | 90.6    |
 | Synthetic-1                          | Qwen2.5-7B-Instruct          | 30.0   | 26.6   | 85.6    |
+| MiMo-7B-SFT                          | MiMo-7B-Base          | 58.7   | 44.3   | 93.0    |
 | **MiroMind-SFT-7B**                  | Qwen2.5-Math-7B             | 60.4   | 45.0   | 94.6    |
 
 *† means that the score of DeepSeek-R1 on AIME25 is from our evaluation.*
@@ -50,6 +51,7 @@
 | DeepSeek-R1-0528                 | 91.4   | 87.5   | –       |
 | Qwen3-8B                         | 76.0   | 67.3   | –       |
 | DeepSeek-R1-0528-Qwen3-8B        | 86.0   | 76.3   | –       |
+| MiMo-7B-RL                       | 68.2   | 55.4   | 95.8    |
 | <tr><td colspan="4" align="center"><em>**32B Models trained from Qwen2.5 series**</em></td></tr> |
 | DeepSeek-R1-Distill-Qwen-32B     | 70.8   | 52.1   | 95.8    |
 | Skywork-OR1-32B-Preview          | 77.1   | 68.2   | 97.5    |
@@ -69,7 +71,7 @@
 venv environment:
 
 ```bash
-git clone https://github.com/XYaoooo/MiroMind-M1.git
+git clone https://github.com/MiroMindAsia/MiroMind-M1.git
 cd MiroMind-M1
 
 # Install Python 3.10 environment.
@@ -151,3 +153,6 @@ Results are saved in `results/[model_name]/[dataset_name]/` with:
 - `average_accuracy.txt`: Final accuracy score
 - `run[X]_inference_eval_results.csv`: Detailed results
 
+## 🙏 Acknowledgement
+
+The RL trianing is built from the wonderful [`verl`](https://github.com/volcengine/verl) project.
