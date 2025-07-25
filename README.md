@@ -40,7 +40,7 @@
 | Open-R1                              | Qwen2.5-Math-7B-Instruct     | 36.7   | 40.0   | 90.6    |
 | Synthetic-1                          | Qwen2.5-7B-Instruct          | 30.0   | 26.6   | 85.6    |
 | MiMo-7B-SFT                          | MiMo-7B-Base          | 58.7   | 44.3   | 93.0    |
-| **MiroMind-SFT-7B**                  | Qwen2.5-Math-7B             | 60.4   | 45.0   | 94.6    |
+| **MiroMind-SFT-7B**                  | Qwen2.5-Math-7B             | **60.4**   | **45.0**   | **94.6**    |
 
 *† means that the score of DeepSeek-R1 on AIME25 is from our evaluation.*
 
@@ -54,14 +54,14 @@
 | MiMo-7B-RL                       | 68.2   | 55.4   | 95.8    |
 | <tr><td colspan="4" align="center"><em>**32B Models trained from Qwen2.5 series**</em></td></tr> |
 | DeepSeek-R1-Distill-Qwen-32B     | 70.8   | 52.1   | 95.8    |
-| Skywork-OR1-32B-Preview          | 77.1   | 68.2   | 97.5    |
-| **MiroMind-M1-RL-32B**           | 77.5   | 65.6   | 96.4    |
+| Skywork-OR1-32B-Preview          | 77.1   | **68.2**   | **97.5**    |
+| **MiroMind-M1-RL-32B**           | **77.5**   | 65.6   | 96.4    |
 | <tr><td colspan="4" align="center"><em>**7B Models trained from Qwen2.5 series**</em></td></tr> |
 | DeepSeek-R1-Distill-Qwen-7B      | 55.5   | 39.2   | –       |
 | **MiroMind-M1-SFT-7B**           | 60.4   | 45.0   | 94.6    |
 | Light-R1-7B-DS                   | 59.1   | 44.3   | –       |
 | Skywork-OR1-7B                   | 72.2   | 54.6   | –       |
-| **MiroMind-M1-RL-7B**            | 73.4   | 57.8   | 96.7    |
+| **MiroMind-M1-RL-7B**            | **73.4**   | **57.8**   | **96.7**    |
 
 
 ## 🛠 Getting Started
@@ -152,6 +152,24 @@ bash m1_eval_script/evaluate_7b_math500.sh
 Results are saved in `results/[model_name]/[dataset_name]/` with:
 - `average_accuracy.txt`: Final accuracy score
 - `run[X]_inference_eval_results.csv`: Detailed results
+
+## 📚 Citation
+Please cite our technical report if you found our work helpful:
+```
+@article{li2025miromind,
+  title={MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via Context-Aware Multi-Stage Policy Optimization},
+  author={Li, Xingxuan and Xiao, Yao and Ng, Dianwen and Ye, Hai and Deng, Yue and Lin, Xiang and Wang, Bin and Mo, Zhanfeng and Zhang, Chong and Zhang, Yueyi and others},
+  journal={arXiv preprint arXiv:2507.14683},
+  year={2025}
+}
+
+@article{zhang2025100,
+  title={100 days after deepseek-r1: A survey on replication studies and more directions for reasoning language models},
+  author={Zhang, Chong and Deng, Yue and Lin, Xiang and Wang, Bin and Ng, Dianwen and Ye, Hai and Li, Xingxuan and Xiao, Yao and Mo, Zhanfeng and Zhang, Qi and others},
+  journal={arXiv preprint arXiv:2505.00551},
+  year={2025}
+}
+```
 
 ## 🙏 Acknowledgement
 
