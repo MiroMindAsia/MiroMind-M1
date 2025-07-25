@@ -153,6 +153,17 @@ Results are saved in `results/[model_name]/[dataset_name]/` with:
 - `average_accuracy.txt`: Final accuracy score
 - `run[X]_inference_eval_results.csv`: Detailed results
 
+## 📚 Citation
+Please cite our technical report if you found our work helpful:
+```
+@article{li2025miromind,
+  title={MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via Context-Aware Multi-Stage Policy Optimization},
+  author={Li, Xingxuan and Xiao, Yao and Ng, Dianwen and Ye, Hai and Deng, Yue and Lin, Xiang and Wang, Bin and Mo, Zhanfeng and Zhang, Chong and Zhang, Yueyi and others},
+  journal={arXiv preprint arXiv:2507.14683},
+  year={2025}
+}
+```
+
 ## 🙏 Acknowledgement
 
 The RL trianing is built from the wonderful [`verl`](https://github.com/volcengine/verl) project.
