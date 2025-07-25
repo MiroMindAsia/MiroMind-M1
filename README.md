@@ -162,6 +162,13 @@ Please cite our technical report if you found our work helpful:
   journal={arXiv preprint arXiv:2507.14683},
   year={2025}
 }
+
+@article{zhang2025100,
+  title={100 days after deepseek-r1: A survey on replication studies and more directions for reasoning language models},
+  author={Zhang, Chong and Deng, Yue and Lin, Xiang and Wang, Bin and Ng, Dianwen and Ye, Hai and Li, Xingxuan and Xiao, Yao and Mo, Zhanfeng and Zhang, Qi and others},
+  journal={arXiv preprint arXiv:2505.00551},
+  year={2025}
+}
 ```
 
 ## 🙏 Acknowledgement
