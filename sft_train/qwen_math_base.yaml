@@ -1,0 +1,51 @@
+### model
+model_name_or_path: model_path
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: path/to/ds_z3_config.json  # choices: [ds_z0_config.json, ds_z2_config.json, ds_z3_config.json]
+
+### dataset
+dataset: dataset_name
+template: qwen_instruct
+cutoff_len: 26000
+rope_scaling: linear
+max_samples: 100000000
+overwrite_cache: true
+preprocessing_num_workers: 32
+dataloader_num_workers: 16
+
+### output
+output_dir: output_dir
+save_strategy: epoch
+logging_steps: 5
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: true
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 1
+learning_rate: 5.0e-5
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 360000000
+resume_from_checkpoint: null
+
+# eval
+val_size: 0.002
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 100
+
+# others
+flash_attn: fa2
+gradient_checkpointing: true
+seed: 42
+run_name: wandb_run_name
+report_to: wandb
