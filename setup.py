@@ -37,17 +37,19 @@ install_requires = [
   'pylatexenc',
   'ray[default]>=2.10',
   'tensordict<=0.6.2',
+  'torch==2.6.0+cu124',
   'torchdata',
   'transformers',
   'wandb',
+  'math-verify==0.7.0',
 ]
 
 TEST_REQUIRES = ['pytest', 'yapf', 'py-spy']
 PRIME_REQUIRES = ['pyext']
 GEO_REQUIRES = ['mathruler']
-GPU_REQUIRES = ['liger-kernel', 'flash-attn']
+GPU_REQUIRES = ['liger-kernel', 'flash-attn==2.7.4.post1']
 MATH_REQUIRES = ['math-verify==0.7.0']  # Add math-verify v0.7.0 as an optional dependency
-VLLM_REQUIRES = ['tensordict<=0.6.2', 'vllm<=0.8.2']
+VLLM_REQUIRES = ['tensordict<=0.6.2', 'vllm==0.8.5.post1']
 SGLANG_REQUIRES = [
   'tensordict<=0.6.2', 
   'sglang[all]==0.4.4.post4',

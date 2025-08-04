@@ -80,9 +80,10 @@ virtualenv -p python3.10 venv
 source venv/bin/activate
 
 # Install dependencies.
-pip3 install torch==2.4.0 --index-url https://download.pytorch.org/whl/cu124
+pip3 install torch==2.6.0+cu124 --index-url https://download.pytorch.org/whl/cu124
 pip3 install numpy psutil ninja packaging cmake
 pip3 install flash_attn==2.7.4.post1 --no-build-isolation # This may take a while...
+pip3 install vllm==0.8.5.post1
 pip3 install -e .
 ```
 
