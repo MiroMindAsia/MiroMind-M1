@@ -86,6 +86,16 @@ pip3 install flash_attn==2.7.4.post1 --no-build-isolation # This may take a whil
 pip3 install -e .
 ```
 
+## 🎨 Data Preparation
+
+Run the below commands to generate training and validation parquet files.
+
+```bash
+python data/prepare_train_data.py --local_dir data/
+python data/prepare_val_data.py --local_dir data/
+```
+
+
 ## 🏋️ Training
 
 ### Multi-Node Training
@@ -119,7 +129,7 @@ export HOME=YOUR_HOME_PATH
 Then run the below script to start the training:
 
 ```bash
-bash m1_train_script/campo_32b.sh
+bash rl_train/campo_32b.sh
 ```
 
 ## ⚖️ Run Evaluation
